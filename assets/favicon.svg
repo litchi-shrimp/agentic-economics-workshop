@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="Agentic Economics">
+  <rect width="32" height="32" rx="7" fill="#0a0a0a"/>
+  <path d="M16 13.4 L9.8 18.4 M16 13.4 L22.2 18.4 M9.8 21 L22.2 21" stroke="#1457ff" stroke-width="1.1" opacity="0.6" fill="none"/>
+  <circle cx="16" cy="10.2" r="3.1" fill="#1457ff"/>
+  <circle cx="9.8" cy="21" r="2.3" fill="#ffffff" opacity="0.88"/>
+  <circle cx="22.2" cy="21" r="2.3" fill="#ffffff" opacity="0.88"/>
+</svg>
