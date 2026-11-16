@@ -35,7 +35,7 @@
     });
   }
 
-  /* ---- Speaker cards: hover preview + full abstract dialog -------------- */
+  /* ---- Speaker cards: hover preview + full bio dialog ------------------- */
   var cards = Array.prototype.slice.call(document.querySelectorAll('.sp-card'));
 
   cards.forEach(function (card) {
@@ -93,6 +93,8 @@
     };
 
     cards.forEach(function (card) {
+      if (!card.querySelector('.sp-abs')) return;
+
       ['sp-media', 'sp-more'].forEach(function (cls) {
         var btn = card.querySelector('.' + cls);
         if (!btn) return;
@@ -120,6 +122,22 @@
       lastCard = null;
     });
   }
+
+  /* ---- Schedule: expandable abstracts ------------------------------------ */
+
+  var talks = Array.prototype.slice.call(document.querySelectorAll('.talk'));
+
+  talks.forEach(function (talk) {
+    var toggle = talk.querySelector('.t-toggle');
+    var panel = talk.querySelector('.t-abs');
+    if (!toggle || !panel) return;
+
+    toggle.addEventListener('click', function () {
+      var open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', open ? 'false' : 'true');
+      panel.hidden = open;
+    });
+  });
 
   /* ---- Active section in the nav ---------------------------------------- */
   var navAnchors = Array.prototype.slice.call(
