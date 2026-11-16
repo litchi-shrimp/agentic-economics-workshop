@@ -82,7 +82,7 @@
 
             <div class="hero-actions">
               <a class="btn btn-primary" href="#program">View schedule</a>
-              <a class="btn btn-ghost" href="#organizers">Organizers</a>
+              <a class="btn btn-ghost" href="#speakers">Speakers</a>
             </div>
           </div>
         </div>
@@ -192,40 +192,172 @@
       <div class="wrap sec-grid">
         <div class="sec-label"><span class="sec-num">03</span>Speakers</div>
         <div class="sec-body">
-          <h2>Invited keynotes</h2>
-          <p class="lead">
-            Two 45-minute keynotes anchor the programme, one from each side of the agenda.
-            Speakers are being confirmed and will be announced here.
-          </p>
+          <h2>Invited speakers</h2>
 
-          <div class="speakers">
-            <article class="speaker-card">
-              <div class="speaker-top">
-                <span class="tag-mono">Keynote I</span>
-                <h3>AI agents for economic systems</h3>
+          <div class="sp-grid">
+
+            <article class="sp-card">
+              <div class="sp-frame">
+                <button class="sp-media" type="button" aria-label="Read the full abstract: Qirui Mi">
+                  <img src="assets/sp-qirui-mi.jpg" width="640" height="800" loading="lazy" decoding="async"
+                    alt="Qirui Mi">
+                </button>
+                <span class="sp-hint" aria-hidden="true">Abstract</span>
               </div>
-              <div class="speaker-person">
-                <div class="avatar avatar-tbd" aria-hidden="true">?</div>
-                <div>
-                  <p class="speaker-name">To be announced</p>
-                  <p class="speaker-note">Invited speaker · 45 min</p>
+
+              <div class="sp-cap">
+                <p class="sp-name">Qirui Mi</p>
+                <p class="sp-aff">Shanghai University of Finance and Economics</p>
+              </div>
+
+              <div class="sp-panel">
+                <p class="sp-pname">Qirui Mi</p>
+                <p class="sp-talk">Economic World Model for Predicting Economic Dynamics</p>
+                <div class="sp-abs">
+                  <p>Economic systems evolve through the decisions and interactions of heterogeneous agents. This talk
+                    presents a multi-agent framework for an economic world model (EWM), casting economic activity as a
+                    partially observable Markov game. Agents act on the information available to them; their joint
+                    actions change the economic state, which then shapes future decisions. To simulate trajectories that
+                    reflect real-world economic dynamics, we address three connected questions: how to model state
+                    transitions, how to simulate agent policies and collective behaviour, and how to evaluate the
+                    dynamics that emerge.</p>
+                  <p>We begin with EconGym, a general economic simulation environment grounded in macroeconomic and
+                    microeconomic theory. It combines heterogeneous economic roles with different decision-making
+                    algorithms to simulate multi-agent dynamics across more than 25 economic tasks. We then use
+                    automated calibration against real-world data to improve the fidelity of the simulated environment.
+                    Next, we present dynamic Stackelberg mean-field games (DSMFG) for macroeconomic policy optimisation
+                    in large-scale population games, and Mean Field LLM for modelling how collective behaviour evolves.
+                    We also introduce an evaluation framework spanning individual behaviour, group distributions and
+                    macroeconomic dynamics. Finally, we show how LLM agents can use EWM for counterfactual reasoning and
+                    make better decisions. This study provides an interpretable, computable, and empirically testable
+                    framework for understanding and predicting economic dynamics, evaluating policy scenarios, and
+                    supporting intelligent decision-making.</p>
+                </div>
+                <div class="sp-foot">
+                  <button class="sp-more" type="button">View more<svg class="sp-chev" width="9" height="9" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.6 5 6.6l3-3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                  <a class="sp-home" href="https://miracle1207.github.io/miqirui.github.io/" target="_blank" rel="noopener">miracle1207.github.io</a>
                 </div>
               </div>
             </article>
 
-            <article class="speaker-card">
-              <div class="speaker-top">
-                <span class="tag-mono">Keynote II</span>
-                <h3>Mechanism design for agent economies</h3>
+            <article class="sp-card">
+              <div class="sp-frame">
+                <button class="sp-media" type="button" aria-label="Read the full abstract: Yiding Feng">
+                  <img src="assets/sp-yiding-feng.jpg" width="640" height="800" loading="lazy" decoding="async"
+                    alt="Yiding Feng">
+                </button>
+                <span class="sp-hint" aria-hidden="true">Abstract</span>
               </div>
-              <div class="speaker-person">
-                <div class="avatar avatar-tbd" aria-hidden="true">?</div>
-                <div>
-                  <p class="speaker-name">To be announced</p>
-                  <p class="speaker-note">Invited speaker · 45 min</p>
+
+              <div class="sp-cap">
+                <p class="sp-name">Yiding Feng</p>
+                <p class="sp-aff">Hong Kong University of Science and Technology</p>
+              </div>
+
+              <div class="sp-panel">
+                <p class="sp-pname">Yiding Feng</p>
+                <p class="sp-talk">Is This Predictor More Informative than Another? A Decision-Theoretical
+                  Comparison</p>
+                <div class="sp-abs">
+                  <p>In many real-world applications, a model provider provides probabilistic forecasts to
+                    downstream decision-makers who use them to make decisions under diverse payoff objectives. The
+                    provider may have access to multiple predictive models, each potentially miscalibrated, and must
+                    choose which model to deploy in order to maximize the usefulness of predictions for downstream
+                    decisions. A central challenge arises: how can the provider meaningfully compare predictors when
+                    neither is guaranteed to be well-calibrated, and when the relevant decision tasks may differ
+                    across users and contexts?</p>
+                  <p>To answer this, our first contribution introduces the notion of the informativeness gap between
+                    any two predictors, defined as the maximum normalized payoff advantage one predictor offers over
+                    the other across all decision-making tasks. Our framework strictly generalizes several existing
+                    notions including U-Calibration (Kleinberg et al., 2023) and Calibration Decision Loss (Hu and Wu,
+                    2024), and it recovers Blackwell informativeness (Blackwell, 1951, 1953) as a special case when
+                    both predictors are perfectly calibrated. Our second contribution is a dual characterization of
+                    the informativeness gap. We show that this measure satisfies natural desiderata: it is complete and
+                    sound, and it can be estimated sample-efficiently in the prediction-only access setting. We
+                    complement our theory with experiments on LLM-based forecasters in real-world prediction tasks,
+                    showing that the informativeness gap offers a more decision-relevant alternative to traditional
+                    metrics, and provides a principled lens for evaluating how ad hoc calibration post-processing
+                    affects downstream decision usefulness.</p>
+                </div>
+                <div class="sp-foot">
+                  <button class="sp-more" type="button">View more<svg class="sp-chev" width="9" height="9" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.6 5 6.6l3-3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                  <a class="sp-home" href="https://www.ydfeng.us" target="_blank" rel="noopener">ydfeng.us</a>
                 </div>
               </div>
             </article>
+
+            <article class="sp-card">
+              <div class="sp-frame">
+                <button class="sp-media" type="button" aria-label="Read the full abstract: Jiale Han">
+                  <img src="assets/sp-jiale-han.jpg" width="640" height="800" loading="lazy" decoding="async"
+                    alt="Jiale Han">
+                </button>
+                <span class="sp-hint" aria-hidden="true">Abstract</span>
+              </div>
+
+              <div class="sp-cap">
+                <p class="sp-name">Jiale Han</p>
+                <p class="sp-aff">Shenzhen Loop Area Institute</p>
+              </div>
+
+              <div class="sp-panel">
+                <p class="sp-pname">Jiale Han</p>
+                <p class="sp-talk">Economic World Models: Concepts, Systems, and Applications</p>
+                <div class="sp-abs">
+                  <p>What is an Economic World Model, how can we build one, and what can it enable? This talk explores
+                    these questions through our recent work on economic simulation and AI agents. I will begin with an
+                    overview of EWMs as generative models of economic systems, in which individual decisions and
+                    interactions give rise to evolving market and aggregate outcomes. Building on this perspective, our
+                    interactive multi-agent economic simulation system, WonderEcon, illustrates how agent behaviors,
+                    market mechanisms, and institutional rules can be connected in practice. Finally, we discuss how
+                    EWMs can serve as training grounds and evaluation testbeds for AI agents. We invite the community to
+                    build EWMs together, working toward economic digital twins and reliable financial agents for
+                    real-world deployment.</p>
+                </div>
+                <div class="sp-foot">
+                  <button class="sp-more" type="button">View more<svg class="sp-chev" width="9" height="9" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.6 5 6.6l3-3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                  <a class="sp-home" href="https://hanjiale.github.io/" target="_blank" rel="noopener">hanjiale.github.io</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="sp-card">
+              <div class="sp-frame">
+                <button class="sp-media" type="button" aria-label="Read the full abstract: Renzhe Xu">
+                  <img src="assets/sp-renzhe-xu.jpg" width="640" height="800" loading="lazy" decoding="async"
+                    alt="Renzhe Xu">
+                </button>
+                <span class="sp-hint" aria-hidden="true">Abstract</span>
+              </div>
+
+              <div class="sp-cap">
+                <p class="sp-name">Renzhe Xu</p>
+                <p class="sp-aff">Shanghai University of Finance and Economics</p>
+              </div>
+
+              <div class="sp-panel">
+                <p class="sp-pname">Renzhe Xu</p>
+                <p class="sp-talk">Strategic Dynamics in Recommendation Platforms: Creator Competition, Learning, and
+                  Welfare</p>
+                <div class="sp-abs">
+                  <p>Modern recommendation platforms are more than prediction systems. By allocating user attention,
+                    recommendation algorithms shape content creators' incentives and induce strategic responses that
+                    fundamentally change the platform ecosystem. In this talk, I will present a series of our recent
+                    works investigating the interplay between recommendation algorithms and strategic content creators.
+                    We model the competition among content creators from both theoretical and empirical perspectives,
+                    studying how creators strategically adapt their content production and learning strategies in
+                    response to recommendation algorithms. In particular, we investigate how such strategic interactions
+                    influence platform outcomes, including recommendation performance, user welfare, and the dynamics of
+                    creator populations. Together, these works highlight the importance of accounting for strategic
+                    behavior and dynamic feedback when designing learning algorithms for recommendation platforms.</p>
+                </div>
+                <div class="sp-foot">
+                  <button class="sp-more" type="button">View more<svg class="sp-chev" width="9" height="9" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.6 5 6.6l3-3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                  <a class="sp-home" href="https://windxrz.github.io/" target="_blank" rel="noopener">windxrz.github.io</a>
+                </div>
+              </div>
+            </article>
+
           </div>
         </div>
       </div>
@@ -323,6 +455,15 @@
               <span class="org-site">miracle1207.github.io</span>
             </a>
 
+            <a class="org-card" href="http://pinyanlu.com/" target="_blank" rel="noopener">
+              <span class="org-photo">
+                <img src="assets/org-lupinyan.jpg" width="480" height="640" loading="lazy" decoding="async" alt=""
+                  aria-hidden="true">
+              </span>
+              <h3 class="org-name">Pinyan Lu</h3>
+              <span class="org-site">pinyanlu.com</span>
+            </a>
+
             <a class="org-card" href="https://windxrz.github.io/" target="_blank" rel="noopener">
               <span class="org-photo">
                 <img src="assets/org-xurenzhe.jpg" width="480" height="640" loading="lazy" decoding="async" alt=""
@@ -351,20 +492,8 @@
               <span class="org-site">liboecon.com</span>
             </a>
 
-            <a class="org-card" href="http://pinyanlu.com/" target="_blank" rel="noopener">
-              <span class="org-photo">
-                <img src="assets/org-lupinyan.jpg" width="480" height="640" loading="lazy" decoding="async" alt=""
-                  aria-hidden="true">
-              </span>
-              <h3 class="org-name">Pinyan Lu</h3>
-              <span class="org-site">pinyanlu.com</span>
-            </a>
-
           </div>
 
-          <p class="foot-note">
-            Supported by xxx xxx xxx and volunteers.
-          </p>
         </div>
       </div>
     </section>
@@ -423,6 +552,21 @@
       <span>Non-archival · No formal proceedings</span>
     </div>
   </footer>
+
+  <dialog class="sp-dialog" id="sp-dialog" aria-labelledby="sp-dialog-talk">
+    <div class="sp-dialog-inner">
+      <button class="sp-dialog-close" type="button" aria-label="Close">
+        <svg width="13" height="13" viewBox="0 0 14 14" aria-hidden="true">
+          <path d="M3 3l8 8M11 3l-8 8" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" />
+        </svg>
+      </button>
+      <p class="sp-dialog-name"></p>
+      <h3 class="sp-dialog-talk" id="sp-dialog-talk"></h3>
+      <div class="sp-dialog-body"></div>
+      <p class="sp-dialog-foot"><a class="sp-dialog-home" href="#" target="_blank" rel="noopener"></a></p>
+    </div>
+  </dialog>
 
   <script src="assets/main.js" defer></script>
 </body>
