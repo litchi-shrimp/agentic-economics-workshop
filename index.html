@@ -211,23 +211,43 @@
             </article>
 
             <article class="sp-card" data-key="shuo-sun">
-              <div class="sp-frame sp-frame--empty" aria-hidden="true">
-                <svg class="sp-avatar" viewBox="0 0 64 64" fill="none">
-                  <circle cx="32" cy="23" r="9.5" stroke="currentColor" stroke-width="1.6" />
-                  <path d="M13 54c0-9.7 8.5-16.5 19-16.5S51 44.3 51 54" stroke="currentColor" stroke-width="1.6"
-                    stroke-linecap="round" />
-                </svg>
+              <div class="sp-frame">
+                <button class="sp-media" type="button" aria-label="Read the bio: Shuo Sun">
+                  <img src="assets/sp-shuo-sun.jpg" width="640" height="800" loading="lazy" decoding="async"
+                    alt="Shuo Sun">
+                </button>
+                <span class="sp-hint" aria-hidden="true">Bio</span>
               </div>
 
               <div class="sp-cap">
                 <p class="sp-name">Shuo Sun</p>
-                <p class="sp-aff">Coming soon</p>
+                <p class="sp-aff">Hong Kong University of Science and Technology (Guangzhou)</p>
               </div>
 
               <div class="sp-panel">
+                <p class="sp-pname">Assistant Professor</p>
                 <p class="sp-talk">Shuo Sun</p>
                 <div class="sp-abs">
-                  <p>Coming soon</p>
+                  <p>I am an Assistant Professor at the FinTech Thrust, HKUST (GZ), where I lead the FinBrain Research
+                    Group. I received my Ph.D. in Computer Science from Nanyang Technological University, where I
+                    conducted research in the Agent Mediated Intelligence Lab under the supervision of Professor Bo An.
+                    My research interest lies at the intersection of artificial intelligence and financial technology,
+                    with a focus on reinforcement learning (RL) for quantitative trading. I have published over ten
+                    papers in top-tier AI conferences and journals, including NeurIPS, KDD, AAAI, WWW, and Artificial
+                    Intelligence. I led the development of TradeMaster, an open-source RL-based trading platform with
+                    over 1.9k stars on GitHub. I was also awarded first place in the 2024 Citadel Datathon. Prior to my
+                    doctoral studies, I earned a bachelor’s degree from Nankai University and a master’s degree from the
+                    University of Edinburgh.</p>
+                </div>
+
+                <div class="sp-foot">
+                  <button class="sp-more" type="button">View more<svg class="sp-chev" width="9" height="9"
+                      viewBox="0 0 10 10" aria-hidden="true">
+                      <path d="M2 3.6 5 6.6l3-3" fill="none" stroke="currentColor" stroke-width="1.4"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></button>
+                  <a class="sp-home" href="https://sunshuo01.github.io/" target="_blank"
+                    rel="noopener">sunshuo01.github.io</a>
                 </div>
               </div>
             </article>
@@ -415,9 +435,39 @@
               <div class="talk-head">
                 <span class="t-time">15:00–15:30</span>
                 <div>
-                  <h3 class="t-title">Talk title to be announced</h3>
-                  <p class="t-meta"><span class="t-name">Shuo Sun</span><span>Affiliation to be announced</span></p>
+                  <h3 class="t-title">From Anonymous Wallets to Behavioral Agents: A Calibrated Policy Test Bed for DAO
+                    Governance</h3>
+                  <p class="t-meta"><span class="t-name">Shuo Sun</span><span>Assistant Professor</span><span>Hong Kong
+                      University of Science and Technology (Guangzhou)</span></p>
                 </div>
+                <button class="t-toggle" type="button" aria-expanded="false" aria-controls="abs-shuo-sun">
+                  Abstract<svg class="t-chev" width="9" height="9" viewBox="0 0 10 10" aria-hidden="true">
+                    <path d="M2 3.6 5 6.6l3-3" fill="none" stroke="currentColor" stroke-width="1.4"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+              <div class="t-abs" id="abs-shuo-sun" hidden>
+                <p>Unlike traditional corporate hierarchies, Decentralized Autonomous Organizations (DAOs) manage a
+                  multi-billion-dollar economy by utilizing token-voting mechanisms that aim to distribute governance
+                  power. While DAOs envision democratic governance, their complex economic dynamics can produce
+                  unforeseen issues, such as token concentration and runaway inflation. Navigating this complexity
+                  requires scalable simulation testbeds that construct heterogeneous behavioral agents from large
+                  volumes of on-chain transaction data. We propose DAO-SIM, the first realistic data-driven, LLM-based
+                  token-flow simulator that uses inverse behavioral profiling through event-chain clustering and
+                  two-stage LLM interpretation to reconstruct heterogeneous participant profiles under the anonymity of
+                  DAOs. Then a hierarchical agent architecture separates probabilistic decisions by profile-level super
+                  agents from independent execution by wallet-level child agents, enabling flexible simulation
+                  scaling-up while reducing redundant LLM inference. Built on over 3 million on-chain transactions
+                  collected from Uniswap, DAO-SIM simulates decision-making for an initial population of 5,000 agents
+                  and up to 10,000 at peak. Compared to existing agent-based baselines, our simulation aligns much more
+                  closely with observed empirical data and faithfully reproduces 3 key stylized facts of token
+                  economics: whale effect, path dependence, and the-rich-get-richer effect. Leveraging this validated
+                  fidelity, we deploy DAO-SIM as a robust testbed for counterfactual policy experiments. Our findings
+                  reveal: modest benefits from perfectly equal initial allocations, substantial inequality reduction
+                  from equal inflation issuance, and -- contrary to prior studies -- little redistributive effect from
+                  staking. Consequently, we recommend combining fairer initial allocations with equally issued
+                  inflation to improve DAO governance.</p>
               </div>
             </article>
 
